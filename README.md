@@ -26,8 +26,7 @@ from selenium.common.exceptions import WebDriverException
   
   
 #### DRIVER OPTIONS TEMPLATE:    
-  
-###### PYTHON  
+
 '''python  
 # instatiate the Options class  
 chrome_options = Options()  
