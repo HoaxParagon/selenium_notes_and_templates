@@ -27,9 +27,9 @@ from selenium.common.exceptions import WebDriverException
   
 #### DRIVER OPTIONS TEMPLATE:    
 
-'''python  
+```python  
 
-\# instatiate the Options class  
+# instatiate the Options class  
 chrome_options = Options()  
     # options can be enabled with a simple DEBUG define, ie DEBUG = 1  
     if not DEBUG:  
@@ -88,7 +88,7 @@ chrome_options = Options()
     # specify your webdriver, here's an example of chrome.    
     driver = webdriver.Chrome(executable_path=CHROME_PATH, options=chrome_options)    
 
-'''
+```
 
 #### FULL LIST OF CHROMIUM COMMAND LINE SWITCHES  
 <details>  
