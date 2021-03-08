@@ -27,8 +27,8 @@ from selenium.common.exceptions import WebDriverException
   
 #### DRIVER OPTIONS TEMPLATE:    
 
-'''python  
-# instatiate the Options class  
+'''python
+\# instatiate the Options class  
 chrome_options = Options()  
     # options can be enabled with a simple DEBUG define, ie DEBUG = 1  
     if not DEBUG:  
