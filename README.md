@@ -27,39 +27,39 @@ from selenium.common.exceptions import WebDriverException
   
 #### DRIVER OPTIONS TEMPLATE:    
   
-######PYTHON  
+###### PYTHON  
 '''python  
 # instatiate the Options class  
 chrome_options = Options()  
-	# options can be enabled with a simple DEBUG define, ie DEBUG = 1  
+    # options can be enabled with a simple DEBUG define, ie DEBUG = 1  
     if not DEBUG:  
-		# options to be set only in debug  
+        # options to be set only in debug  
         chrome_options.add_argument("--headless")  
         chrome_options.add_argument("--ignore-certificate-errors")  
         chrome_options.add_argument("--disable-gpu")  
         #chrome_options.add_argument("--disable-gpu")  
         #chrome_options.add_argument("--start-maximized")  
         chrome_options.add_argument("disable-infobars")  
-	# not a bad idea to store some screen resolutions here  
+    # not a bad idea to store some screen resolutions here  
     # my resolutions is:   2560x1440  
     # half screen is:      1280x720  
     # current setting:     1920x1080  
-	# 720i/p               1280x720  
-	# 480i/p               720x480  
-	# 576i/p               720/576  
-	  
-	# alternatively, set up string variables  
-	# _720 = "--window-size=1280x720"  
-	# _480 = "--window-size=480x720"  
+    # 720i/p               1280x720  
+    # 480i/p               720x480  
+    # 576i/p               720/576  
+  
+    # alternatively, set up string variables  
+    # _720 = "--window-size=1280x720"  
+    # _480 = "--window-size=480x720"  
       
-	#chrome_options.add_argument("--start-maximized")  
+    #chrome_options.add_argument("--start-maximized")  
     #chrome_options.add_argument("--window-size=1280x720")  
-	#chrome_options.add_argument(_720)  
+    #chrome_options.add_argument(_720)  
     chrome_options.add_argument("--window-size=1920x1080")  
-	# alternative screen size set up  
-	chrome_options.add_argument('window-size={}x{}'.format(  
+    # alternative screen size set up  
+    chrome_options.add_argument('window-size={}x{}'.format(  
             self.screen_width, self.screen_height  
-	# custom user data directory setting  
+    # custom user data directory setting  
     chrome_options.add_argument("--user-data-dir=/path/to/your/cu")  
     chrome_options.add_argument("--user-data-dir=/path/to/your/cu")  
     chrome_options.add_argument("--disable-notifications")  
@@ -76,7 +76,7 @@ chrome_options = Options()
     chrome_options.add_argument("--disable-webgl")  
     chrome_options.add_argument("--disable-popup-blocking")  
     chrome_options.add_argument('--verbose')  
-	# the experimental options, most show are for downloading  
+    # the experimental options, most show are for downloading  
     chrome_options.add_experimental_option("prefs", {  
             "download.default_directory"                : "C:\\your\\directory\\",  
             "download.prompt_for_download"              : False,  
@@ -92,7 +92,8 @@ chrome_options = Options()
   
 #### FULL LIST OF CHROMIUM COMMAND LINE SWITCHES  
 <details>  
-  <summary>Click to expand!</summary>  
+  <summary>SWITCHES</summary>  
+
 Condition | Explanation  
 -----------------------------  
 --/prefetch:1[1] | /prefetch:# arguments to use when launching various process types. It has been observed that when file reads are consistent for 3 process launches with the same /prefetch:# argument, the Windows prefetcher starts issuing reads in batch at process launch. Because reads depend on the process type, the prefetcher wouldn't be able to observe consistent reads if no /prefetch:# arguments were used. Note that the browser process has no /prefetch:# argument; as such all other processes must have one in order to avoid polluting its profile. Note: # must always be in [1, 8]; otherwise it is ignored by the Windows prefetcher.   
