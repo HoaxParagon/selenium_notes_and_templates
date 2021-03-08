@@ -1,0 +1,182 @@
+
+#page-header h1 { text-shadow: 0px 0px 5px #ccd0ba; }
+
+#old-content h1 a:before { color: #97a74d; content: "\201C"; }
+#old-content h1 a:after  { color: #97a74d; content: "\201D"; }
+#content h1 {
+        text-shadow: 1px 1px 0px #d4d4d4;
+        color: #4a7500;
+}
+
+:focus { outline: 2px solid rgba(74,117,0,0.6); }
+
+#weblog {
+        margin-right: 20px;
+        width: 720px;
+        float: left;
+}
+
+#content a:hover { color: #3f6300; }
+#content a       { color: #4a7500; }
+
+#webkit blockquote { }
+#weblog blockquote > pre {
+        background-color: #f2f7f1;
+        border: 1px solid #84ac89;
+        margin-bottom: 12px;
+        padding: 5px;
+        
+        font-family: Consolas, "Courier New", Courier, monospace;
+        font-size: 12px;
+}
+
+#content blockquote.quote p:before { content: "\201C"; padding-right: 2px; }
+#content blockquote.quote p:after  { content: "\201D"; }
+
+#content blockquote.quote p { margin-bottom: 0px; }
+#content blockquote.quote {
+        background-color: #f2f7f1;
+        padding: 5px 5px 5px 20px;
+        margin-bottom: 8px;
+        font-family: serif;
+        font-size: 14px;
+        border-radius: 3px;
+}
+
+/** Styles required by WordPress' positioning **/
+.alignright  { margin-left: 10px; float: right; }
+.alignleft   { margin-right: 10px; float: left; }
+.aligncenter { margin: 0px auto; display: block }
+
+/** Special CSS for: WebKit Full Screen Example **/
+
+:-webkit-full-screen #weblog > article:first-child:before {
+        display: block;
+        background-color: #FAFAD2;
+        content: 'Click on [ESCAPE] to disable the full-screen mode!';
+        font-size: 16px;
+        
+        border-radius: 5px;
+        box-shadow: 0px 0px 4px #ddd;
+        border: 1px solid #E0E0E0;
+        margin-bottom: 10px;
+        padding: 10px;
+}
+
+/** ******************************************* **/
+/**              css cleanup end                **/
+/** ******************************************* **/
+
+.weblog-post-private {
+        background-color: #ffffe5;
+}
+
+.weblog-post, #weblog-comments {
+        padding: 10px 10px 0 10px;
+        clear: after;
+}
+
+.weblog-post p, #weblog-comments p, .weblog-post li {
+        margin-bottom: 12px;
+        line-height: 1.4;
+}
+
+#weblog-comments footer {
+        width: 200px;
+        float: left;
+}
+
+.weblog-post ul { margin-left: 32px; }
+
+.weblog-post span.keyword { font-family: "Courier New", Courier, monospace; background-color: #f0f0f0; }
+
+.weblog-comment footer a:hover { color: #666666 !important; }
+.weblog-comment footer a       { color: #454545 !important; text-decoration: none; }
+
+.weblog-comment footer {
+        font-size: 11px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: 8px;
+        padding: 5px;
+}
+
+.weblog-comment.peter footer { background-color: #e1e9d6; } /* for me! */
+.weblog-comment div { margin-left: 220px; }
+.weblog-comment h3  { font-size: 1.17em; }
+.weblog-comment br  { clear: both; }
+.weblog-comment {
+        border-bottom: 1px dotted #d0d0d0;
+        padding: 10px 10px 0 0;
+        min-height: 50px;
+}
+
+.respond-pad-top { margin-top: 10px; }
+.no-comments { border-radius: 5px; border: 1px solid #dadada; padding: 5px; }
+
+.weblog-post-meta {
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        width: 80px;
+        height: 40px;
+        float: right;
+}
+
+#weblog-comments h2 {
+        font-family: 'Arial Narrow', Arial;
+        font-weight: normal;
+        font-size: 20px;
+        color: #6a6a6a;
+}
+
+#weblog-navigation a#nav-link-next { float: right; }
+#weblog-navigation a#nav-link-prev { float: left; }
+
+#weblog-navigation {
+        padding: 10px;
+}
+
+#archive-header h2 { font-family: 'Arial Narrow', Arial; font-weight: normal; font-size: 18px; }
+#archive-header { padding: 10px; color: #545454; }
+
+.pictures-center span { display: block; font-style: italic; font-size: 11px; color: #626262; }
+.pictures-center { background-color: #fcfcfc; border: 1px solid #eeeeee; border-radius: 4px; padding: 5px; text-align: center; }
+
+
+
+/** 3d css example post **/
+#css3d-example { font-size: 11px;  line-height: 22px; }
+#css3d-example div.disabled { color: #999; }
+#css3d-example label {
+        display: inline-block;
+        width: 70px;
+}
+
+#css3d-example select:focus {
+         background-color: white !important;
+         border-color: rgba(221,233,188,0.8);
+}
+
+#css3d-example input, #css3d-example select {
+        vertical-align: middle;
+        margin-right: 3px;
+        height: 21px;
+        width: 78px;
+}
+
+.reset-style {
+        border: 2px solid #dadada;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 0px 15px #ccc;
+        -moz-box-shadow: 0px 0px 15px #ccc;
+        box-shadow: 0px 0px 15px #ccc;
+        padding: 15px 25px 15px 25px;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        position: fixed;
+        color: red;
+        top: -3px;
+        right: 50px;
+}

@@ -1,0 +1,411 @@
+@import url(//fonts.googleapis.com/css?family=Cardo);
+
+*      { margin: 0; padding: 0; }
+img    { border: 0; }
+html   { overflow-y: scroll; }
+:focus { outline: none; }
+
+header, footer, section, aside, nav, article { display: block; }
+
+body {
+        background-image: url(/images/background.jpg);
+        padding-bottom: 15px;
+        font-family: Verdana;
+        font-size: 12px;
+}
+
+/** The top-shading and content container **/
+
+#shading {
+        background-image: url(/images/shade.png);
+        position: absolute;
+        height: 300px;
+        width: 100%;
+        z-index: -1;
+        left: 0;
+}
+
+#container {
+        -webkit-box-shadow: 0px 0px 20px #ddd;
+        -moz-box-shadow: 0px 0px 20px #ddd;
+        box-shadow: 0px 0px 20px #ddd;
+        
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        -moz-border-radius-bottomleft: 10px; 
+        -moz-border-radius-bottomright: 10px; 
+        
+        background-color: white;
+        padding: 0 20px 20px 20px;
+        margin: auto;
+        width: 960px;
+}
+
+/** Style definitions for the page's header **/
+
+#page-header q a:hover { color: #202020; }
+#page-header q a       { color: #545454; }
+
+#page-header q:before { content: "\201C"; }
+#page-header q:after  { content: "\201D"; }
+
+#page-header q:before, #page-header q:after {
+        color: #878787;
+        font-size: 24px;
+        position: relative;
+        top: 5px;
+}
+
+#page-header q {
+        background-position: 0px -266px;
+        margin: -60px 0 0 480px;
+        padding: 15px 0 0 7px;
+        line-height: 14px;
+        text-indent: 30px;
+        position: absolute;
+        width: 450px;
+        
+        font-family: 'Times new Roman', sans;
+        font-size: 13px;
+        color: #545454;
+}
+
+#page-header h1 {
+        font-family: Cardo, 'Arial Narrow', Arial;
+        padding-bottom: 10px;
+        font-weight: normal;
+        font-size: 30px;
+}
+
+/** Navigation-bar, including the transition effect **/
+#page-header li a:hover, #page-header a.active { text-indent: 8px; color: #252525; background-color: #f8f8f8; }
+#page-header li a {
+        /** Animating the hover transition **/
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        
+        /** Mozilla declarations **/
+        -moz-border-radius-bottomleft: 8px; 
+        -moz-border-radius-bottomright: 8px; 
+        
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        background-color: #ffffff;
+        text-decoration: none;
+        
+        margin-right: 8px;
+        padding: 4px 8px 6px 0;
+        cursor: pointer;
+        font-size: 11px;
+        color: #909090;
+        float: left;
+        width: 100px;
+}
+
+#page-header ul { clear: after; list-style-type: none; }
+#page-header li {
+        display: block;
+        float: left;
+}
+
+#page-header nav { border-top: 1px solid #e0e0e0; }
+#page-header     {
+        border-top: 4px solid #454545;
+        padding-top: 25px;
+}
+
+#content-image img { margin-bottom: 12px; width: 960px; height: 150px; }
+#content {
+        padding: 12px 0 12px 0;
+        
+        clear: both;
+}
+
+.content-rounded {
+        -webkit-box-shadow: 0px 0px 4px #ddd;
+        -moz-box-shadow: 0px 0px 4px #ddd;
+        box-shadow: 0px 0px 4px #ddd;
+        border: 1px solid #e0e0e0;
+        padding: 10px 10px 0 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+}
+
+/** Content positioning defines **/
+
+#content aside a:hover { color: #545454; text-decoration: underline; }
+#content aside a       { color: #878787; text-decoration: none; }
+
+#content aside li {
+        border-bottom: 1px dotted #aaaaaa;
+        list-style-type: none;
+        line-height: 1.8;
+        width: 100%;
+}
+
+#content aside section {
+        -webkit-box-shadow: 0px 0px 4px #ddd;
+        -moz-box-shadow: 0px 0px 4px #ddd;
+        box-shadow: 0px 0px 4px #ddd;
+        
+        border: 1px solid #e0e0e0;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        padding: 10px;
+}
+
+#content aside {
+        width: 220px;
+        float: left;
+}
+
+/** Content basic style definitions, shared among the entire site **/
+#content header p a:hover, #content footer p a:hover { color: #454545; }
+#content header p a, #content footer p a { text-decoration: underline; color: #898989; }
+#content header p, #content footer p {
+        margin-bottom: 5px;
+        font-size: 11px;
+        color: #898989;
+}
+
+#content header {
+        border-bottom: 1px dotted #e0e0e0;
+        margin-bottom: 5px;
+}
+
+#content h1 a:hover { text-decoration: none; color: inherit; }
+#content h1 a { text-decoration: none; color: inherit; }
+#content h1 {
+        text-decoration: none;
+        font-family: 'Arial Narrow', Arial;
+        font-weight: normal;
+        font-size: 24px;
+}
+
+#content h2 { font-size: 16px; }
+#content h3 { font-size: 14px; }
+#content h4, h5, h6 { font-size: 12px; }
+#content h2, h3, h4, h5, h6 {
+        font-family: Arial;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #232323;
+}
+
+#content a:hover { text-decoration: underline; }
+#content a { text-decoration: none; }
+#content p {
+        margin-bottom: 12px;
+        line-height: 1.4;
+}
+
+#content ul { list-style-type: square; }
+#content ul, #content ol {
+        margin: 0px 0px 12px 25px;
+}
+
+#content ul.compact li { margin-bottom: 0px; }
+#content ol.compact li { margin-bottom: 0px; }
+#content ul:last-child { margin-bottom: 0px; }
+#content ul li { margin-bottom: 12px; }
+
+#content dd, #content dt { border-bottom: 1px dotted #dadada; }
+
+#content dd { margin-left: 200px; padding: 3px; }
+#content dl { border-top: 1px dotted #dadada; margin-bottom: 12px; }
+#content dt {
+        display: block;
+        width: 200px;
+        clear: left;
+        float: left;
+        padding: 3px;
+}
+
+#content code br { display: none; }
+#content code {
+        background-color: #fafafa;
+        border: 1px solid #dadada;
+        border-radius: 5px;
+        margin: 12px 0 0 30px;
+        font-size: 11px;
+        white-space: pre;
+        display: block;
+        padding: 4px;
+}
+
+#content footer {
+        border-top: 1px dotted #e0e0e0;
+        margin-top: 5px;
+        padding-top: 5px;
+        clear: both;
+}
+
+#content .info-box {
+        float: right;
+        width: 40%;
+}
+
+#content .small a { color: #787878; text-decoration: underline; }
+#content .small { font-size: 11px; color: #787878; }
+
+#content .no-padding { padding: 0px; }
+#content .no-margin  { margin: 0px; }
+
+#content .pass { color: green; }
+#content .fail { color: red; }
+
+#content .width-100 { width: 100%; }
+#content .width-80  { width: 80%; }
+#content .width-60  { width: 60%; }
+#content .width-50  { width: 50%; }
+#content .width-40  { width: 40%; }
+#content .width-20  { width: 20%; }
+
+#content .quote:target { background-color: rgba(74,117,0,0.3); outline: 3px solid rgba(74,117,0,0.3); }
+
+/** footer style definitions **/
+#latest-articles li a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #878787;
+        display: block;
+}
+
+#latest-articles li:hover { background-color: #f0f0f0; }
+#latest-articles li {
+        /** Animating the hover transition **/
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        border-radius: 3px;
+        
+        list-style-type: none;
+        background-color: #fafafa;
+        margin-bottom: 5px;
+        color: #a9a9a9;
+        padding: 5px;
+}
+
+#latest-articles {
+        width: 300px;
+        float: left;
+}
+
+/** Footer definitions, using the PNG sprite for fast loading **/
+#my-whereabouts li, #fronteers a, #zend-certification a, #page-header q {
+        background-image: url(/images/sprite.png);
+        background-repeat: no-repeat;
+}
+
+#fronteers a, #zend-certification a {
+        text-indent: -150px; /* fortunately all browsers support content: */
+        content: ''; /* clear the text in compliant browsers */
+        overflow: hidden;
+        display: block;
+        width: 79px;
+}
+
+#zend-certification a:hover { opacity: 1.0; }
+#fronteers a:hover          { background-position: -79px -231px; }
+
+#zend-certification a { background-position:   0px -216px; height: 50px; opacity: 0.8; }
+#fronteers a          { background-position: -79px -216px; height: 15px; }
+#fronteers            { margin-bottom: 5px; }
+
+/** ** Now the icon list. CSS 3 would be better if it'd support background-position-[xy] ** **/
+
+#twitter:hover   { background-position: 0px  -18px; }
+#linkedin:hover  { background-position: 0px  -54px; }
+#tweakers:hover  { background-position: 0px  -90px; }
+#lvp:hover       { background-position: 0px -126px; }
+#facebook:hover  { background-position: 0px -162px; }
+#hyves:hover     { background-position: 0px -198px; }
+
+#twitter   { background-position: 0px    0px; }
+#linkedin  { background-position: 0px  -36px; }
+#tweakers  { background-position: 0px  -72px; }
+#lvp       { background-position: 0px -108px; }
+#facebook  { background-position: 0px -144px; }
+#hyves     { background-position: 0px -180px; }
+
+#my-whereabouts li:hover a { text-decoration: underline; color: #545454; }
+#my-whereabouts li a       { text-decoration: none;      color: #878787; }
+
+#my-whereabouts li {
+        background-repeat: no-repeat;
+        list-style-type: none;
+        padding-left: 25px;
+        margin-bottom: 4px;
+        line-height: 18px;
+}
+
+#my-whereabouts {
+        border-right: 1px solid #f0f0f0;
+        border-left: 1px solid #f0f0f0;
+        padding-left: 20px;
+        margin-left: 20px;
+        width: 200px;
+        float: left;
+}
+
+#about-this-blog {
+        padding-bottom: 20px;
+        height: 40px;
+}
+
+#about-peter a:hover { text-decoration: underline; color: #545454; }
+#about-peter a       { text-decoration: none;      color: #878787; }
+#about-peter p       { margin-bottom: 8px; }
+#about-peter aside   {
+        padding-top: 14px;
+        margin-left: 10px;
+        float: right;
+        width: 79px;
+}
+
+#about-peter {
+        border-top: 1px solid #f0f0f0;
+        padding-top: 12px;
+}
+
+#page-footer #about {
+        margin-left: 20px;
+        width: 398px;
+        float: left;
+}
+
+/** General footer-styling elements **/
+#container #page-footer h2, #content aside h2 {
+        font-family: 'Times new Roman', Sans;
+        margin-bottom: 5px;
+        font-weight: normal;
+        font-size: 18px;
+        color: #454545;
+}
+
+#container #page-footer {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 8px;
+        font-size: 11px;
+        clear: both;
+}
+
+/** copyright declarations **/
+#copyright a:hover   { color: #454545; }
+#copyright a         { color: #898989; text-decoration: none; }
+#copyright div.right { float: right; }
+#copyright {
+        border-top: 1px solid #e0e0e0;
+        padding-top: 5px;
+        margin-top: 9px;
+        font-size: 10px;
+        color: #898989;
+        clear: both;
+}
+
+.css-comment {
+    font-weight: normal;
+    font-size: 80%;
+    color: #777;
+}

@@ -1,0 +1,63 @@
+﻿
+#page-header h1 { text-shadow: 0px 0px 5px #bac8d0; }
+
+#content h1 {
+        text-shadow: 1px 1px 0px #d4d4d4;
+        color: #4a7500;
+}
+
+:focus { outline: 2px solid rgba(188,213,233,0.8); }
+
+#content a:hover { color: #095264; }
+#content a       { color: #0b718a; }
+
+#page-examples {
+        margin-bottom: 0px;
+        width: 938px;
+}
+
+#content label {
+        display: inline-block;
+        width: 150px;
+}
+
+#page-examples li:target {
+        outline: 2px solid rgba(74,117,0,0.6);
+        outline-offset: 3px; 
+        font-weight: bold;
+}
+
+#examples ~ ul { margin-bottom: 20px; }
+
+.overview-table {
+        margin-bottom: 15px;
+        width: 100%;
+}
+
+.overview-table th {
+        border-bottom: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+        padding: 4px 5px 4px 5px;
+        text-align: left;
+}
+
+.overview-table tr:nth-of-type(odd) td {
+        background-color: #fafafa;
+}
+
+.overview-table td span { color: red; }
+.overview-table td i { color: #898989; }
+.overview-table td {
+        border-bottom: 1px solid #eaeaea;
+        border-right: 1px solid #eaeaea;
+        padding: 2px 5px 2px 5px;
+}
+
+.overview-table tr:hover td {
+        color: red;
+}
+
+.spec-state-ed, .spec-state-wd, .spec-state-lc, .spec-state-cr, .spec-state-pr, .spec-state-rec {
+        line-height: 14px;
+        font-size: 9px;
+}
