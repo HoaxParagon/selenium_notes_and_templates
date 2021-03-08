@@ -47,11 +47,11 @@ chrome_options = Options()
     # 720i/p               1280x720  
     # 480i/p               720x480  
     # 576i/p               720/576  
-  
+
     # alternatively, set up string variables  
     # _720 = "--window-size=1280x720"  
     # _480 = "--window-size=480x720"  
-      
+
     #chrome_options.add_argument("--start-maximized")  
     #chrome_options.add_argument("--window-size=1280x720")  
     #chrome_options.add_argument(_720)  
@@ -84,22 +84,22 @@ chrome_options = Options()
             "safebrowsing_for_trusted_sources_enabled"  : False,  
             "safebrowsing.enabled"                      : False  
             })  
-      
+
     # specify your webdriver, here's an example of chrome.    
     driver = webdriver.Chrome(executable_path=CHROME_PATH, options=chrome_options)    
-  
-'''  
-  
+
+'''
+
 #### FULL LIST OF CHROMIUM COMMAND LINE SWITCHES  
 <details>  
   <summary>SWITCHES</summary>  
 
-Condition | Explanation  
------------------------------  
---/prefetch:1[1] | /prefetch:# arguments to use when launching various process types. It has been observed that when file reads are consistent for 3 process launches with the same /prefetch:# argument, the Windows prefetcher starts issuing reads in batch at process launch. Because reads depend on the process type, the prefetcher wouldn't be able to observe consistent reads if no /prefetch:# arguments were used. Note that the browser process has no /prefetch:# argument; as such all other processes must have one in order to avoid polluting its profile. Note: # must always be in [1, 8]; otherwise it is ignored by the Windows prefetcher.   
---/prefetch:2[1] | No description   
---/prefetch:3[1] | No description   
---/prefetch:4[1] | No description   
+Condition | Explanation
+-----------------------------
+--/prefetch:1[1] | /prefetch:# arguments to use when launching various process types. It has been observed that when file reads are consistent for 3 process launches with the same /prefetch:# argument, the Windows prefetcher starts issuing reads in batch at process launch. Because reads depend on the process type, the prefetcher wouldn't be able to observe consistent reads if no /prefetch:# arguments were used. Note that the browser process has no /prefetch:# argument; as such all other processes must have one in order to avoid polluting its profile. Note: # must always be in [1, 8]; otherwise it is ignored by the Windows prefetcher.  
+--/prefetch:2[1] | No description  
+--/prefetch:3[1] | No description  
+--/prefetch:4[1] | No description  
 --/prefetch:5[1] | /prefetch:# arguments for the browser process launched in background mode and for the watcher process. Use profiles 5, 6 and 7 as documented on kPrefetchArgument* in content_switches.cc.   
 --/prefetch:6[1] | No description   
 --/prefetch:8[1] | Prefetch arguments are used by the Windows prefetcher to disambiguate different execution modes (i.e. process types) of the same executable image so that different types of processes don't trample each others' prefetch behavior. Legal values are integers in the range [1, 8]. We reserve 8 to mean "whatever", and this will ultimately lead to processes with /prefetch:8 having inconsistent behavior thus disabling prefetch in practice. TODO(rockot): Make it possible for embedders to override this argument on a per-service basis.   
@@ -173,7 +173,7 @@ Condition | Explanation
 --alt7 | No description   
 --alt8 | No description   
 --alt9 | No description   
---always-use-complex-text | Always use the complex text path for web tests.   
+--always-use-complex-text | Always use the complex text path for web tests.  
 --alwaystrue | No description   
 --android-fonts-path | Uses the android SkFontManager on linux. The specified directory should include the configuration xml file with the name "fonts.xml". This is used in blimp to emulate android fonts on linux.   
 --angle | No description   
