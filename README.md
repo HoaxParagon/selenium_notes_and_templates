@@ -1464,9 +1464,7 @@ Based on top-of-tree Chromium code, updated daily and open source. RSS Feed?
 Append ?date=YYYY-MM-DD to the URL to get a snapshot of the supported switches at a certain date.  
   ## SWITCHES  
   
-  
-  
-  
+
 </details>  
 
   
@@ -1538,7 +1536,7 @@ chrome_options = Options()
   
   
 #### TODO:  
-- [ ] Find all the options arguments accepted, make tables of each webdriver's options    
+- [X] Find all the options arguments accepted, make tables of each webdriver's options    
   
   
   
