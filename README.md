@@ -92,7 +92,7 @@ chrome_options = Options()
 
 #### FULL LIST OF CHROMIUM COMMAND LINE SWITCHES  
 <details>  
-  <summary>SWITCHES</summary>  
+  <summary>EXPAND</summary>  
 
 Condition | Explanation
 -----------------------------------------------|-----------------------------------------------
