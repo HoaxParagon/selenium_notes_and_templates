@@ -23,7 +23,7 @@ from selenium.common.exceptions import ElementClickInterceptedException
 from selenium.common.exceptions import WebDriverException    
   
 [LIST OF CHROME DRIVER COMMAND LINE SWITCHES](https://peter.sh/experiments/chromium-command-line-switches/) Credit to [Peter Beverloo](https://peter.sh/)  
-#### FULL LIST OF CHROMIUM COMMAND LINE SWITCHES  
+### FULL LIST OF CHROMIUM COMMAND LINE SWITCHES  
 <details>  
   <summary>EXPAND</summary>  
 
