@@ -1537,8 +1537,11 @@ chrome_options = Options()
   
 #### TODO:  
 - [X] Find all the options arguments accepted, make tables of each webdriver's options    
-  
-  
+- [ ] Make notes about the uses of each option  
+- [ ] Clean up the templates  
+- [ ] Make more templates  
+- [ ] Make notes on using a remote webdriver and headless setup  
+- [ ] Make a headless server OS for Raspberry Pi to use with selenium remotely???  
   
   
   
