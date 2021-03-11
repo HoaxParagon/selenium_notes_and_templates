@@ -1474,53 +1474,52 @@ Append ?date=YYYY-MM-DD to the URL to get a snapshot of the supported switches a
 
 # instatiate the Options class  
 chrome_options = Options()  
-    # options can be enabled with a simple DEBUG define, ie DEBUG = 1  
-    if not DEBUG:  
-        # options to be set only in debug  
-        chrome_options.add_argument("--headless")  
-        chrome_options.add_argument("--ignore-certificate-errors")  
-        chrome_options.add_argument("--disable-gpu")  
-        #chrome_options.add_argument("--disable-gpu")  
-        #chrome_options.add_argument("--start-maximized")  
-        chrome_options.add_argument("disable-infobars")  
-    # not a bad idea to store some screen resolutions here  
-    # my resolutions is:   2560x1440  
-    # half screen is:      1280x720  
-    # current setting:     1920x1080  
-    # 720i/p               1280x720  
-    # 480i/p               720x480  
-    # 576i/p               720/576  
-
-    # alternatively, set up string variables  
-    # _720 = "--window-size=1280x720"  
-    # _480 = "--window-size=480x720"  
-
-    #chrome_options.add_argument("--start-maximized")  
-    #chrome_options.add_argument("--window-size=1280x720")  
-    #chrome_options.add_argument(_720)  
-    chrome_options.add_argument("--window-size=1920x1080")  
-    # alternative screen size set up  
-    chrome_options.add_argument('window-size={}x{}'.format(  
-            self.screen_width, self.screen_height  
-    # custom user data directory setting  
-    chrome_options.add_argument("--user-data-dir=/path/to/your/cu")  
-    chrome_options.add_argument("--user-data-dir=/path/to/your/cu")  
-    chrome_options.add_argument("--disable-notifications")  
-    chrome_options.add_argument('--no-sandbox')  
-    chrome_options.add_argument("--disable-xss-auditor")  
-    chrome_options.add_argument("--disable-web-security")  
-    chrome_options.add_argument("--allow-running-insecure-content")  
+# options can be enabled with a simple DEBUG define, ie DEBUG = 1  
+if not DEBUG:  
+    # options to be set only in debug  
     chrome_options.add_argument("--headless")  
-    chrome_options.add_argument("--no-sandbox")  
-    chrome_options.add_argument("--disable-dev-shm-usage")  
+    chrome_options.add_argument("--ignore-certificate-errors")  
     chrome_options.add_argument("--disable-gpu")  
-    chrome_options.add_argument("--log-level=3")  
-    chrome_options.add_argument("--disable-setuid-sandbox")  
-    chrome_options.add_argument("--disable-webgl")  
-    chrome_options.add_argument("--disable-popup-blocking")  
-    chrome_options.add_argument('--verbose')  
-    # the experimental options, most show are for downloading  
-    chrome_options.add_experimental_option("prefs", {  
+    #chrome_options.add_argument("--disable-gpu")  
+    #chrome_options.add_argument("--start-maximized")  
+    chrome_options.add_argument("disable-infobars")  
+# not a bad idea to store some screen resolutions here 
+# my resolutions is:   2560x1440  
+# half screen is:      1280x720  
+# current setting:     1920x1080  
+# 720i/p:              1280x720  
+# 480i/p:              720x480  
+# 576i/p:              720/576  
+
+# alternatively, set up string variables  
+# _720 = "--window-size=1280x720"  
+# _480 = "--window-size=480x720"  
+
+#chrome_options.add_argument("--start-maximized")  
+#chrome_options.add_argument("--window-size=1280x720")  
+#chrome_options.add_argument(_720)  
+chrome_options.add_argument("--window-size=1920x1080")  
+# alternative screen size set up  
+chrome_options.add_argument('window-size={}x{}'.format(  
+            self.screen_width, self.screen_height  
+# custom user data directory setting  
+chrome_options.add_argument("--user-data-dir=/path/to/your/cu")  
+chrome_options.add_argument("--disable-notifications")  
+chrome_options.add_argument('--no-sandbox')  
+chrome_options.add_argument("--disable-xss-auditor")  
+chrome_options.add_argument("--disable-web-security")  
+chrome_options.add_argument("--allow-running-insecure-content")  
+chrome_options.add_argument("--headless")  
+chrome_options.add_argument("--no-sandbox")  
+chrome_options.add_argument("--disable-dev-shm-usage")  
+chrome_options.add_argument("--disable-gpu")  
+chrome_options.add_argument("--log-level=3")  
+chrome_options.add_argument("--disable-setuid-sandbox")  
+chrome_options.add_argument("--disable-webgl")  
+chrome_options.add_argument("--disable-popup-blocking")  
+chrome_options.add_argument('--verbose')  
+# the experimental options, most show are for downloading  
+chrome_options.add_experimental_option("prefs", {  
             "download.default_directory"                : "C:\\your\\directory\\",  
             "download.prompt_for_download"              : False,  
             "download.directory_upgrade"                : True,  
@@ -1528,8 +1527,8 @@ chrome_options = Options()
             "safebrowsing.enabled"                      : False  
             })  
 
-    # specify your webdriver, here's an example of chrome.    
-    driver = webdriver.Chrome(executable_path=CHROME_PATH, options=chrome_options)    
+# specify your webdriver, here's an example of chrome.    
+driver = webdriver.Chrome(executable_path=CHROME_PATH, options=chrome_options)    
 
 ```
   
